@@ -90,3 +90,8 @@ h3 span::after {
     background-color: #7a73d1;
     z-index: -1;
 }
+
+video {
+    will-change: transform;
+    contain: strict;
+}
