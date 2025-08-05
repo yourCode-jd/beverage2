@@ -42,7 +42,7 @@ section {
     width: 100%;
     height: 0;
     overflow: hidden;
-    background-color: #7a73d1d9;
+    background-color: #000000d9;
     flex-direction: column;
     justify-content: center;
     box-shadow: 0 0 10px rgba(58, 77, 57, 0.1);
@@ -94,4 +94,18 @@ h3 span::after {
 video {
     will-change: transform;
     contain: strict;
+}
+
+#scroll-container {
+    height: 5000px;
+    /* Adjust based on frame count */
+}
+
+#hero-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
 }
