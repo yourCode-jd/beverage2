@@ -31,10 +31,6 @@ h6 {
     letter-spacing: normal;
 }
 
-section {
-    padding: 100px 0;
-}
-
 #slideNavigation {
     position: fixed;
     top: 0px;
