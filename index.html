@@ -66,107 +66,156 @@
 
     <!-- Hero -->
     <div id="scroll-container">
-        <canvas id="hero-canvas" width="1920" height="1080"></canvas>
-
-
-        <!-- why choose us -->
-        <section id="why-choose" class=" w-[30%] absolute top-0 h-full pointer-events-none">
-            <div class="mr-auto px-6 lg:px-10">
-                <!-- Heading -->
-                <div class="text-center h-screen flex flex-col justify-center">
-                    <h2 class="text-3xl md:text-9xl font-bold my-5 text-white">Refresh Your World</h2>
-                    <p class="text-2xl max-w-screen-md mx-auto text-white">A new kind of drink that energizes, hydrates,
-                        and tastes like the future.
-
-                    </p>
-                </div>
-
-                <!-- Grid -->
-                <div class="grid gap-40 grid-cols-1" id="choose-grid">
-                    <!-- Card 1 -->
-                    <div
-                        class="choose-card p-6 rounded-xl bg-transparent hover:shadow-lg hover:shadow-[#9333ea]/20 group transition-all duration-300">
-                        <div class=" text-4xl font-bold mb-4  text-white">
-                            01
-                            <!-- <img src="/assets/icons/brain.svg" alt="Adaptive Learning" class="w-6 "> -->
-                        </div>
-                        <h3 class="font-semibold text-6xl mb-2 text-white">Neon Splash</h3>
-                        <p class="text-xl text-white">A vibrant burst of citrus and exotic fruits with a glowing twist.
-                            Neon Splash is designed to energize your senses and refresh your body — day or night</p>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div
-                        class="choose-card p-6 rounded-xl bg-transparent hover:shadow-lg hover:shadow-[#9333ea]/20 group transition-all duration-300">
-                        <div class=" text-4xl font-bold mb-4 ">
-                            02
-                            <!-- <img src="/assets/icons/clock.svg" alt="Real-Time Processing" class="w-6 "> -->
-                        </div>
-                        <h3 class="font-semibold text-6xl mb-2 text-white">Quantum Quench</h3>
-                        <p class="text-xl text-white">Quantum Quench delivers next-level hydration using molecular
-                            hydration tech. It works faster, absorbs deeper, and keeps you energized longer.</p>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div
-                        class="choose-card p-6 rounded-xl bg-transparent hover:shadow-lg hover:shadow-[#9333ea]/20 group transition-all duration-300">
-                        <div class=" text-4xl font-bold mb-4 ">
-                            03
-                            <!-- <img src="/assets/icons/lock.svg" alt="Secure" class="w-6 "> -->
-                        </div>
-                        <h3 class="font-semibold text-6xl mb-2 text-white">HydraCore</h3>
-                        <p class="text-xl text-white">Packed with minerals and plant-based hydration boosters, HydraCore
-                            restores your body’s natural balance. Ideal for athletes and daily movers.</p>
-                    </div>
-
-                    <!-- Card 4 -->
-                    <div
-                        class="choose-card p-6 rounded-xl bg-transparent hover:shadow-lg hover:shadow-[#9333ea]/20 group transition-all duration-300">
-                        <div class=" text-4xl font-bold mb-4 ">
-                            04
-                            <!-- <img src="/assets/icons/data.svg" alt="Data Integration" class="w-6 "> -->
-                        </div>
-                        <h3 class="font-semibold text-6xl mb-2 text-white">Pulse Elixir</h3>
-                        <p class="text-xl text-white">An energy-boosting fusion drink designed for creators, gamers, and
-                            thinkers. Pulse Elixir brings steady focus without the crash.
-                        </p>
-                    </div>
-
-                    <!-- Card 5 -->
-                    <div
-                        class="choose-card p-6 rounded-xl bg-transparent hover:shadow-lg hover:shadow-[#9333ea]/20 group transition-all duration-300">
-                        <div class=" text-4xl font-bold mb-4 ">
-                            05
-                            <!-- <img src="/assets/icons/scalability.svg" alt="Scalable" class="w-6 "> -->
-                        </div>
-                        <h3 class="font-semibold text-6xl mb-2 text-white">VitaVolt</h3>
-                        <p class="text-xl text-white">A vitamin-enriched energy drink that supports immune function and
-                            mental focus. No jitters, just sharp vibes and smooth power.</p>
-                    </div>
-
-                    <!-- Card 6 -->
-                    <div
-                        class="choose-card p-6 rounded-xl bg-transparent hover:shadow-lg hover:shadow-[#9333ea]/20 group transition-all duration-300">
-                        <div class=" text-4xl font-bold mb-4 ">
-                            06
-                            <!-- <img src="/assets/icons/support.svg" alt="Support" class="w-6 "> -->
-                        </div>
-                        <h3 class="font-semibold text-6xl mb-2 text-white">IonDrip</h3>
-                        <p class="text-xl text-white">IonDrip is a precision hydration drink engineered to replenish
-                            what your body loses during intense activity, heat, or stress.
-                        </p>
-                    </div>
-
-                    <div
-                        class="choose-card p-6 rounded-xl bg-transparent hover:shadow-lg hover:shadow-[#9333ea]/20 group transition-all duration-300">
-                        <h1 class=" text-9xl font-bold ">Thankyou</h1>>
-                    </div>
-                </div>
+        <div id="scroll-inner">
+            <div class="canvas-wrapper">
+                <canvas id="hero-canvas" width="1920" height="1080"></canvas>
             </div>
-        </section>
 
+            <div class="content-wrapper">
+                <div class=" w-[30%] absolute top-0 h-full pointer-events-none">
+                    <div class="mr-auto px-6 lg:px-10">
+                        <!-- Heading -->
+                        <div class="text-center h-screen flex flex-col justify-center">
+                            <h2 class="text-3xl md:text-9xl font-bold my-5 text-white">Refresh Your World</h2>
+                            <p class="text-2xl max-w-screen-md mx-auto text-white">A new kind of drink that energizes,
+                                hydrates,
+                                and tastes like the future.
+
+                            </p>
+                        </div>
+
+                        <!-- Grid -->
+                        <div class="grid gap-40 grid-cols-1" id="choose-grid">
+                            <!-- Card 1 -->
+                            <div
+                                class="choose-card p-6 rounded-xl bg-transparent hover:shadow-lg hover:shadow-[#9333ea]/20 group transition-all duration-300">
+                                <div class=" text-4xl font-bold mb-4  text-white">
+                                    01
+                                    <!-- <img src="/assets/icons/brain.svg" alt="Adaptive Learning" class="w-6 "> -->
+                                </div>
+                                <h3 class="font-semibold text-6xl mb-2 text-white">Neon Splash</h3>
+                                <p class="text-xl text-white">A vibrant burst of citrus and exotic fruits with a glowing
+                                    twist.
+                                    Neon Splash is designed to energize your senses and refresh your body — day or night
+                                </p>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div
+                                class="choose-card p-6 rounded-xl bg-transparent hover:shadow-lg hover:shadow-[#9333ea]/20 group transition-all duration-300">
+                                <div class=" text-4xl font-bold mb-4 ">
+                                    02
+                                    <!-- <img src="/assets/icons/clock.svg" alt="Real-Time Processing" class="w-6 "> -->
+                                </div>
+                                <h3 class="font-semibold text-6xl mb-2 text-white">Quantum Quench</h3>
+                                <p class="text-xl text-white">Quantum Quench delivers next-level hydration using
+                                    molecular
+                                    hydration tech. It works faster, absorbs deeper, and keeps you energized longer.</p>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div
+                                class="choose-card p-6 rounded-xl bg-transparent hover:shadow-lg hover:shadow-[#9333ea]/20 group transition-all duration-300">
+                                <div class=" text-4xl font-bold mb-4 ">
+                                    03
+                                    <!-- <img src="/assets/icons/lock.svg" alt="Secure" class="w-6 "> -->
+                                </div>
+                                <h3 class="font-semibold text-6xl mb-2 text-white">HydraCore</h3>
+                                <p class="text-xl text-white">Packed with minerals and plant-based hydration boosters,
+                                    HydraCore
+                                    restores your body’s natural balance. Ideal for athletes and daily movers.</p>
+                            </div>
+
+                            <!-- Card 4 -->
+                            <div
+                                class="choose-card p-6 rounded-xl bg-transparent hover:shadow-lg hover:shadow-[#9333ea]/20 group transition-all duration-300">
+                                <div class=" text-4xl font-bold mb-4 ">
+                                    04
+                                    <!-- <img src="/assets/icons/data.svg" alt="Data Integration" class="w-6 "> -->
+                                </div>
+                                <h3 class="font-semibold text-6xl mb-2 text-white">Pulse Elixir</h3>
+                                <p class="text-xl text-white">An energy-boosting fusion drink designed for creators,
+                                    gamers, and
+                                    thinkers. Pulse Elixir brings steady focus without the crash.
+                                </p>
+                            </div>
+
+                            <!-- Card 5 -->
+                            <div
+                                class="choose-card p-6 rounded-xl bg-transparent hover:shadow-lg hover:shadow-[#9333ea]/20 group transition-all duration-300">
+                                <div class=" text-4xl font-bold mb-4 ">
+                                    05
+                                    <!-- <img src="/assets/icons/scalability.svg" alt="Scalable" class="w-6 "> -->
+                                </div>
+                                <h3 class="font-semibold text-6xl mb-2 text-white">VitaVolt</h3>
+                                <p class="text-xl text-white">A vitamin-enriched energy drink that supports immune
+                                    function and
+                                    mental focus. No jitters, just sharp vibes and smooth power.</p>
+                            </div>
+
+                            <!-- Card 6 -->
+                            <div
+                                class="choose-card p-6 rounded-xl bg-transparent hover:shadow-lg hover:shadow-[#9333ea]/20 group transition-all duration-300">
+                                <div class=" text-4xl font-bold mb-4 ">
+                                    06
+                                    <!-- <img src="/assets/icons/support.svg" alt="Support" class="w-6 "> -->
+                                </div>
+                                <h3 class="font-semibold text-6xl mb-2 text-white">IonDrip</h3>
+                                <p class="text-xl text-white">IonDrip is a precision hydration drink engineered to
+                                    replenish
+                                    what your body loses during intense activity, heat, or stress.
+                                </p>
+                            </div>
+
+                            <!-- Card 7 -->
+                            <div
+                                class="choose-card p-6 rounded-xl bg-transparent hover:shadow-lg hover:shadow-[#9333ea]/20 group transition-all duration-300">
+                                <div class=" text-4xl font-bold mb-4 text-white">07</div>
+                                <h3 class="font-semibold text-6xl mb-2 text-white">Nova Boost</h3>
+                                <p class="text-xl text-white">A stellar surge of antioxidants and adaptogens, Nova Boost
+                                    gives your body a cosmic edge in focus and endurance.</p>
+                            </div>
+
+                            <!-- Card 8 -->
+                            <div
+                                class="choose-card p-6 rounded-xl bg-transparent hover:shadow-lg hover:shadow-[#9333ea]/20 group transition-all duration-300">
+                                <div class=" text-4xl font-bold mb-4 text-white">08</div>
+                                <h3 class="font-semibold text-6xl mb-2 text-white">Plasma Punch</h3>
+                                <p class="text-xl text-white">Juicy, electric, and deeply hydrating. Plasma Punch fuses
+                                    fruit acids and electrolytes for instant refreshment.</p>
+                            </div>
+
+                            <!-- Card 9 -->
+                            <div
+                                class="choose-card p-6 rounded-xl bg-transparent hover:shadow-lg hover:shadow-[#9333ea]/20 group transition-all duration-300">
+                                <div class=" text-4xl font-bold mb-4 text-white">09</div>
+                                <h3 class="font-semibold text-6xl mb-2 text-white">Lucid Lime</h3>
+                                <p class="text-xl text-white">A calming, clarifying drink with lime, mint, and
+                                    l-theanine. Perfect for resetting your mood and mind.</p>
+                            </div>
+
+                            <!-- Card 10 -->
+                            <div
+                                class="choose-card p-6 rounded-xl bg-transparent hover:shadow-lg hover:shadow-[#9333ea]/20 group transition-all duration-300">
+                                <div class=" text-4xl font-bold mb-4 text-white">10</div>
+                                <h3 class="font-semibold text-6xl mb-2 text-white">ZestFire</h3>
+                                <p class="text-xl text-white">For the days that never stop — a bold blend of guarana,
+                                    ginger, and citrus to keep you moving.</p>
+                            </div>
+
+
+
+                            <div
+                                class="choose-card p-6 rounded-xl bg-transparent hover:shadow-lg hover:shadow-[#9333ea]/20 group transition-all duration-300">
+                                <h1 class=" text-9xl font-bold ">Thankyou</h1>>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
-
 
     <!-- use cases -->
     <section class="py-24 text-white overflow-hidden">

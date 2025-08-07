@@ -15,9 +15,36 @@ function toggleHighlight() {
 
 // ====== Hero section ======
 
+// Register ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
-const frameCount = 300; // Number of frames exported
+// Setup ScrollTrigger to use custom scroll container
+ScrollTrigger.scrollerProxy("#scroll-container", {
+  scrollTop(value) {
+    if (arguments.length) {
+      document.getElementById("scroll-container").scrollTop = value;
+    }
+    return document.getElementById("scroll-container").scrollTop;
+  },
+  getBoundingClientRect() {
+    return {
+      top: 0,
+      left: 0,
+      width: window.innerWidth,
+      height: window.innerHeight,
+    };
+  },
+  pinType: document.querySelector("#scroll-container").style.transform
+    ? "transform"
+    : "fixed",
+});
+
+// Set ScrollTrigger to use the custom scroller by default
+ScrollTrigger.defaults({
+  scroller: "#scroll-container",
+});
+
+const frameCount = 300;
 const canvas = document.getElementById("hero-canvas");
 const context = canvas.getContext("2d");
 canvas.width = 1920;
@@ -45,7 +72,7 @@ gsap.to(obj, {
   ease: "none",
   scrollTrigger: {
     scrub: 1,
-    trigger: "#scroll-container",
+    trigger: "#scroll-inner",
     start: "top top",
     end: "bottom bottom",
   },
@@ -55,16 +82,13 @@ gsap.to(obj, {
   },
 });
 
-// Animate Why Choose Us Section
-// Set initial state
-gsap.utils.toArray(".choose-card").forEach((card, i, all) => {
+// Animate .choose-card elements
+gsap.utils.toArray(".choose-card").forEach((card) => {
   ScrollTrigger.create({
     trigger: card,
     start: "bottom bottom",
     end: "top center",
     scrub: true,
-    pin: false,
-    pinSpacing: false,
     animation: gsap.fromTo(
       card,
       {
@@ -80,6 +104,9 @@ gsap.utils.toArray(".choose-card").forEach((card, i, all) => {
     ),
   });
 });
+
+// Final refresh
+ScrollTrigger.refresh();
 
 // ===== Why choose ======
 // gsap.utils.toArray(".choose-card").forEach((card, i) => {
