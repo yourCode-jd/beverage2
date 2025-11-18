@@ -7,7 +7,7 @@ An immersive hero with GSAP-driven entrance and scrubbed video playback that fee
 
 ## 🚀 Github Demo
 
-[View Here](https://yourcode-jd.github.io/beverage2/)
+[View Here](https://yourcode-jd.github.io/BrewAura/)
 
 ---
 
